@@ -2,8 +2,9 @@ import matplotlib.pyplot as plt
 
 
 # 绘制手写数字的灰度图
-def show_image(data):
+def show_image(data, index):
     plt.imshow(data.reshape((28, 28)), cmap='gray')
+    plt.savefig(f'./images/{index}.jpg')
 
 
 # 绘制 Loss 曲线
